@@ -1,7 +1,10 @@
 [core]
-    remote = s3remote
-['remote "myremote"']
-    url = s3:https:/mediarepository-uat.s3.ap-south-1.amazonaws.com/dvc-remote
+    remote = remote_storage
 ['remote "s3remote"']
     url = s3://dvc-remote/
     endpointurl = https://mediarepository-uat.s3.ap-south-1.amazonaws.com
+    region = ap-south-1
+    access_key_id = AKIA5H55QG3Q3LTSOIVE
+    secret_access_key = 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
+['remote "remote_storage"']
+    url = ../../dvc_remote
